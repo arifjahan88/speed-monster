@@ -71,7 +71,8 @@ const gameOver = () => {
   // the current time is the finish time
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
-  const timeTaken = (finishTime - startTime) / 1000;
+  const timeTakenfloat = (finishTime - startTime) / 1000;
+  const timeTaken = parseInt(timeTakenfloat);
 
   // show result modal
   resultModal.innerHTML = "";
@@ -83,10 +84,14 @@ const gameOver = () => {
   display.classList.add("inactive");
   // show result
   resultModal.innerHTML += `
-    <h1>Finished!</h1>
-    <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
-    <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
-    <button onclick="closeModal()">Close</button>
+    <div class="parent_finished">
+      <div>
+        <h1>Finished!</h1>
+        <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
+        <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
+        <button onclick="closeModal()">Close</button>
+    </div>
+    </div>
   `;
 
   addHistory(questionText, timeTaken, errorCount);
