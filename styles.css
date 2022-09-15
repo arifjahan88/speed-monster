@@ -158,7 +158,6 @@ a{
 }
 .blog-parts{
   color: rgb(155, 152, 220);
-  margin: 20px;
   padding-top: 0;
   padding: 10px 50px 50px 50px;
   text-align: center;
@@ -204,6 +203,13 @@ a{
   width: 100%;
   position: fixed;
   top: 0;
+}
+.blog-header{
+  color: #9dffad;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 40px;
+  border-bottom: 2px solid beige;
 }
 
 @media only screen and (max-width: 700px) {
