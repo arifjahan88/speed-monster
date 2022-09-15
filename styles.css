@@ -217,7 +217,7 @@ a{
   }
 }
 
-@media only screen and (min-width: 1264px) and (max-width: 1904px) {
+@media only screen and (min-width: 701px) and (max-width: 1920px) {
   .box-container {
     padding: 0 20px;
     width: 100%;
