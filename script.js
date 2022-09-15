@@ -39,9 +39,9 @@ const typeController = (e) => {
   }
 
   userText += newLetter;
-
+  console.log(newLetter);
   const newLetterCorrect = validate(newLetter);
-
+  // console.count(newLetterCorrect);
   if (newLetterCorrect) {
     display.innerHTML += `<span class="green">${
       newLetter === " " ? "▪" : newLetter
