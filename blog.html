@@ -23,11 +23,52 @@
       </section>
     </header>
     <main>
-      <section>
-        <div>
+      <section class="blog-parts">
+        <div class="blog-part">
           <h2>
             What is the difference between local storage and session storage?
           </h2>
+          <p>
+            LocalStorage and sessionStorage are comparable. Data in
+            sessionStorage is deleted when the page session ends, however data
+            in localStorage never expires. A unique page session is established
+            and allocated to a certain tab in the browser each time a document
+            is loaded there.
+          </p>
+        </div>
+        <div class="blog-part">
+          <h2>
+            What is the difference between global scope and block scope in
+            javascript?
+          </h2>
+          <p>
+            Function Scope: A variable declared within a function is only used
+            inside of that function and cannot be utilized outside of it. <br />
+            Block Scope: When a variable is declared inside an if, switch, for,
+            or while statement, it is only available within that statement.
+          </p>
+        </div>
+        <div class="blog-part">
+          <h2>how event loop work in javascript?</h2>
+          <p>
+            The sole task of the event loop is to keep track of the call stack
+            and callback queue. The Event Loop will pull the first event from
+            the queue and push it to the Call Stack, which will then execute it
+            if the Call Stack is empty. In the Event Loop, such an iteration is
+            referred to as a tick.
+          </p>
+        </div>
+        <div class="blog-part">
+          <h2>How do I get undefined in JavaScript?</h2>
+          <p>
+            A feature of the global object is undefined. It is a variable with a
+            broad scope, in other words. The fundamental value of undefined is
+            its starting value. When you call a non-existent property or method
+            on an object, you will receive an undefined value. In the example
+            above, the function Sum does not produce a result, yet we still
+            attempt to assign the value of the result to a variable. The outcome
+            in this case will therefore be unclear.
+          </p>
         </div>
       </section>
     </main>

@@ -154,9 +154,23 @@ a{
 }
 .navber{
   margin-top: 20px;
+  margin-left: 10px;
 }
-
-
+.blog-parts{
+  color: rgb(155, 152, 220);
+  margin: 20px;
+  padding-top: 0;
+  padding: 10px 50px 50px 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.blog-part{
+  margin-top: 50px;
+}
+.blog-part h2{
+  color: #eb6565;
+}
 
 .card {
   width: 100%;
